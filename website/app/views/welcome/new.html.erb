@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flushing NY</title>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    p{
+      font-family: corbel;
+    }
+  </style>
+<!-- Navbar (sit on top) -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-top w3-card w3-margin-bottom" style="width:100%;">
+  <div class="w3-bar w3-white w3-wide w3-card w3-padding-16">
+    <%= link_to 'Return', welcome_index_path %>
+    <!-- weather widget start -->
+    <a class="w3-bar-item" title="Current Weather" href="https://www.weatherwx.com/forecast/ny/new+york.html" target="_blank"><img style="width: 140px;"
+      src="https://www.weatherwx.com/forecast.php?forecast=hourly&place=new+york&state=ny&country=us&config=png&alt=hwitransparentbbb&hwvbg=transparent"
+       alt="Click for the latest New York weather forecast."></a>
+      <!-- weather widget end -->
+    <p class="w3-right w3-hide-small"> Local Time (ET) <span id="datetime"></p>
+  </div>
+</div>
+</head>
+<!-- Local Time Script -->
+<script>
+// Local time function
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
+<br>
+<div>
+  <body>
+<link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" rel="stylesheet">
+<br>
+<br>
+<br>
+<div class="w3-center w3-padding-16" style="font-family:karma;font-size:30px">Queens Botanical Garden</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px">
+
+  <!-- First Photo Grid  -->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://i.pinimg.com/originals/24/32/0f/24320fa3871fdac06c148aee9cfa4cde.jpg" alt="Botanical Garden" style="width:100%">
+      <h3>Photo Shoot</h3>
+      <p>This is a prefect place for a photo shoot; whether it's a wedding or a birthday.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.urbanadvantagenyc.org/wp-content/uploads/2017/11/QBG-Pic6.png" alt="Botanical Garden" style="width:100%">
+      <h3>Lots of Flowers</h3>
+      <p>Spring is the best time to visit for a field full or flowers.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images.glaciermedia.ca/polopoly_fs/1.1017800.1398988993!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/web-0503-pathway-jpg.jpg" alt="Botanical Garden" style="width:100%">
+      <h3>Just a Walk</h3>
+      <p>There is no better place in Queens for a nice walk!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://ih1.redbubble.net/image.554206901.9742/flat,1000x1000,075,f.u7.jpg" alt="Botanical Garden" style="width:100%">
+      <h3>Special Messages</h3>
+      <p>There are occasional messages that will surprise you.</p>
+      <a title="Visit Website" href="https://queensbotanical.org/" class="w3-grey w3-button">Visit Organization</a><br>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid and paragraphs  / JSON data imported from products.ts -->
+  <div class="w3-center w3-padding-16" style="font-family:karma;font-size:30px">Restaurants</div>
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://images.nycgo.com/image/fetch/q_70,w_900/https://www.nycgo.com/images/uploads/articles/Flushing_food_guide/Queens-Night-Market-flushong-queens-nyc_MG_4488.jpg" alt="restaurant1" style="width:100%">
+      <h3>Mapo Korean B.B.Q.</h3>
+      <p>A string of Korean restaurants line Flushing’s Northern Boulevard and its surrounding blocks. Slightly off the main
+        drag is Mapo, a tidy corner spot set up for group dining. For tableside grilling, it’s hard to do better; the kalbi
+        and pork belly get highest marks.</p>
+        <a title="View Menu / Order Online" href="https://www.yelp.com/biz/mapo-bbq-flushing-2" class="w3-block w3-grey w3-button">Order Online</a>
+        <br>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images.nycgo.com/image/fetch/q_70,w_900/https://www.nycgo.com/images/uploads/articles/Flushing_food_guide/asian-jewels-seafood-restaurant-flushong-queens-nyc-julienneschaer_004.jpg" alt="Salmon" style="width:100%">
+      <h3>Little Sheep Mongolian Hot Pot</h3>
+      <p>Find a lively dim sum banquet hall with all the traditional trays flying around, and feast on har gow (shrimp dumplings),
+        steamed pork buns, rice noodle rolls and custard tarts.</p>
+        <a title="View Menu / Ratings" href="https://www.yelp.com/biz/happy-lamb-hot-pot-flushing" class="w3-block w3-grey w3-button">Order Online</a>
+        <br>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://www.queensbuzz.com/files/image/article/thumb_415.jpg" alt="Sandwich" style="width:100%">
+      <h3>Joe's Shanghai Restaurant</h3>
+      <p>You might want to take this review with you next time you head into Flushing, because everyone of these dishes was a hit.</p>
+      <a title="Visit Website" href="https://www.joeshanghairestaurants.com/" class="w3-block w3-grey w3-button">Order Online</a>
+      <br>
+    </div>
+    <div class="w3-quarter">
+      <img src="http://www.queensbuzz.com/files/image/article/thumb_894.jpg" alt="Croissant" style="width:100%">
+      <h3>Queens Taste 2012</h3>
+      <p>A sort of modern eclectic restaurant that borrows the best from the panoply of cuisines around the world</p>
+      <a title="View Reviews" href="http://www.queensbuzz.com/taste-of-the-world---taste-of-the-world-2012-queens-cms-894" class="w3-block w3-grey w3-button">Order Online</a>
+    </div>
+  </div>
+<br>
+<br>
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <!-- Routing backward to main page -->
+      <%= link_to '<<', welcome_index_path %>
+      <!-- Staying on the current page -->
+      <%= link_to '1', welcome_new_path %>
+      <!-- Routing forward -->
+      <%= link_to '2', welcome_show_path %>
+      <!-- Routing forward -->
+      
+      <%= link_to '>>', welcome_show_path %>
+    </div>
+  </div>
+</body>
+
+
+
+  <!-- Footer paragraph imported from product.ts -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>DID YOU KNOW?</h3>
+      <p>In 1664, the English took control of New Amsterdam, ending Dutch control of the New Netherland colony, and renamed it the Province of New York. When Queens County was established in 1683, the Town of Flushing was one of the original five towns which comprised the county.</p>
+    </div>
+
+    <div class="w3-third w3-right w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span>
+        <a href="https://www.iloveny.com/" title="Visit I❤NY"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span></a>
+        <a href="https://en.wikipedia.org/wiki/Flushing,_Queens" title="Click for more details"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flushing</span></a>
+        <a href="https://www.tripadvisor.com/Restaurants-g47729-zfg11776-Flushing_Queens_New_York.html" title="Best bars & Pubs"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sushi</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span></a>
+        <a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span></a>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-16" style="font-family:corbel;">
+  <p>Developed by <a class="fa fa-linkedin-square" style="color:#0e76a8" href="https://linkedin.com/in/muhammad-khan-21752a1a6" title="LinkedIn Profile" class="w3-hover-text-navy"> Muhammad Khan</a></p>
+</footer>
+</html>

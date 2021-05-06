@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flushing NY</title>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    p{
+      font-family: corbel;
+    }
+  </style>
+   <!-- Navbar (sit on top) -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="w3-top w3-card w3-margin-bottom" style="width:100%;min-width:400px;">
+        <div class="w3-bar w3-white w3-wide w3-card w3-padding-16">
+          <%= link_to 'Return', welcome_index_path %>
+           <!-- weather widget start -->
+            <a class="w3-bar-item" title="Current Weather" href="https://www.weatherwx.com/forecast/ny/new+york.html" target="_blank"><img style="width: 140px;"
+              src="https://www.weatherwx.com/forecast.php?forecast=hourly&place=new+york&state=ny&country=us&config=png&alt=hwitransparentbbb&hwvbg=transparent"
+               alt="Click for the latest New York weather forecast."></a>
+                <!-- weather widget end -->
+                 <p class="w3-right w3-hide-small"> Local Time (ET) <span id="datetime"></p>
+                 	</div>
+                   </div>
+                    </head>
+                     <div>
+                      <!-- Local Time Script -->
+                       <script>
+                        // Local time function
+                       var dt = new Date();
+                      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+                     </script>
+                    <body>
+                   <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css" rel="stylesheet">
+                  <br>
+                 <br>
+                <br>
+               <br>
+              <div class="w3-center w3-padding-16" style="font-family:karma;font-size:30px">Hotels</div>
+             <!-- !PAGE CONTENT! -->
+            <div class="w3-main w3-content w3-padding" style="max-width:1200px">
+         	<!-- First Photo Grid -->
+         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    		<div class="w3-quarter">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/36/8e/02/exterior.jpg" alt="Hotel" style="width:100%">
+		<h3>Hyatt Place</h3>
+   <p>Our brand new, ultramodern 168 room Hyatt Place Flushing/LaGuardia Airport hotel is built atop three-glass levels
+        of world class retail shopping, a variety of ethnic and American restaurants, a separate office condominium tower
+        and 43 luxury furnished residential condominiums. Exclusively accessible only to hotel guests, the hotel also
+        features an expansive roof-top outdoor garden and restaurant & lounge with spectacular panoramic views of the Manhattan skyline.</p>
+<a title="Click for Rates/ Reservation" href="https://www.hyatt.com/en-US/hotel/new-york/hyatt-place-flushing-laguardia-airport/nyczf" class="w3-block w3-grey w3-button">Make a Reservation</a>
+ <br>
+	</div>
+  	<div class="w3-quarter">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-s/13/6d/75/f2/ramada-flushing-queens.jpg" alt="Hotel" style="width:100%">
+	  		<h3>Ramada by Wyndham</h3>
+		    	<p>Ramada by Wyndham Flushing Queens is an excellent choice for travelers visiting Flushing, offering a family-friendly
+        environment alongside many helpful amenities designed to enhance your stay.</p>
+           <a title="Click for Rates/ Reservation" href="https://www.wyndhamhotels.com/ramada/flushing-new-york/ramada-flushing-queens/overview" class="w3-block w3-grey w3-button">Make a Reservation</a>
+        <br>
+		</div>
+		<div class="w3-quarter">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/65/e4/60/exterior.jpg" alt="Hotel" style="width:100%">
+			<h3>Sheraton LaGuardia East</h3>
+			<p>Enjoy a warm welcome at beautiful Sheraton LaGuardia East Hotel. Located in Flushing, New York, our Chinatown Queens
+        hotel is just 3 miles away from the LaGuardia airport, accessible by our complimentary shuttle.</p>
+        <a title="Click for Rates/ Reservation" href="https://www.marriott.com/hotels/travel/lgasi-sheraton-laguardia-east-hotel/" class="w3-block w3-grey w3-button">Make a Reservation</a>
+        <br>
+		</div>
+		<div class="w3-quarter">
+			<img src="https://media.timeout.com/images/103749568/630/472/image.jpg" alt="Hotel" style="width:100%">
+			<h3>The Parc Hotel</h3>
+			<p>Experience culture, style, and sophistication at our hotel in Flushing, NY. Thoughtfully situated near Citi Field,
+        USTA, and downtown Flushing. Modern comfort and affordability await with stunning NYC skyline views, complimentary
+        buffet breakfast, free wifi, and two onsite restaurants. Ascend to our rooftop bar for sweeping views of LaGuardia
+        Airport, Citi Field, and the Manhattan skyline. Walking distance to both the Long Island Railroad and famed number 7 train.</p>
+        <a title="Click for Rates/ Reservation" href="https://www.theparchotel.com/" class="w3-block w3-grey w3-button">Make a Reservation</a>
+		</div>
+	</div>
+
+	<!-- Second Photo Grid -->
+	<div class="w3-center w3-padding-16" style="font-family:karma;font-size:30px">Flushing on the Map</div>
+	<div class="w3-row-padding w3-padding-16 w3-center">
+
+			<img src="https://static01.nyt.com/packages/images/newsgraphics/2011/0123-nyc-ethnic-neighborhoods-map/nyt-2010-nyc-mosaic-map.png" alt="Map" style="width:50%"><br>
+      <br><a title="View Google Maps" href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&oe=UTF8&msa=0&mid=1dcCfyBsJKYNAoWmm7nln99uGAs8&ll=40.74977262220178%2C-73.848534&z=13" class="w3-grey w3-button">Get Directions</a><br>
+      <br>
+			<p>Flushing contains numerous residential subsections, and its diversity is reflected by the numerous ethnic groups that
+        reside there. Flushing is served by several stations on the Long Island Rail Road's Port Washington Branch, as well as
+        the New York City Subway's IRT Flushing Line 7 and 7 trains, which has its terminus at Main Street.Flushing is located
+        in Queens Community District 7, and its ZIP Codes are 11354, 11355, and 11358. It is patrolled by the New York City
+        Police Department's 109th Precinct.</p>
+		</div>
+	</div>
+  <br>
+
+	<!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <!-- Routing backward to main page -->
+      <%= link_to '<<    ', welcome_new_path %>
+      <!-- Staying on the current page -->
+      <%= link_to '<1>    ', welcome_new_path %>
+      <!-- Routing forward -->
+      <%= link_to '<2>    ', welcome_show_path %>
+      <!-- Routing forward -->
+      <%= link_to '>>    ', welcome_show_path %>
+    </div>
+  </div>
+</body>
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-row-padding w3-padding-32">
+		<div class="w3-third">
+			<h3>DID YOU KNOW?</h3>
+			<p>During the 19th century, as New York City continued to grow in population and economic vitality, so did Flushing. Its proximity to Manhattan was critical in its transformation into a fashionable residential area. In 1837, the Village of Flushing was incorporated within the Town of Flushing. The Village of Flushing, surrounded by nondescript flowers. No other emblem or flag is known to have been used.</p>
+		</div>
+
+		<div class="w3-third w3-right w3-serif">
+			<h3>POPULAR TAGS</h3>
+			<p>
+				<span class="w3-tag w3-black w3-margin-bottom">Travel</span>
+				<a href="https://www.iloveny.com/" title="Visit I❤NY"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span></a>
+				<a href="https://en.wikipedia.org/wiki/Flushing,_Queens" title="Click for more details"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flushing</span></a>
+				<a href="https://www.hotels.com/de1428768-qu0/cheap-hotels-flushing-new-york/" title="Click to find hotels"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hotels</span></a>
+				<a href="https://www.tripadvisor.com/Hotels-g47729-Flushing_Queens_New_York-Hotels.html" title="Trip Advisor"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Lodge</span></a>
+				<a href="https://www.tripadvisor.com/Hotels-g47729-Flushing_Queens_New_York-Hotels.html" title="Click here to find Motels"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Motels</span></a>
+				<a href="https://www.yelp.com/search?cflt=restaurants&find_loc=Flushing%2C+NY" title="Visit Yelp"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sushi</span></a>
+				<a href="https://moovitapp.com/index/en/public_transit-MTA_Flushing_Main_St-NYCNJ-site_25720236-121" title="Visit by bus"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Queens</span></a>
+				<a href="https://moovitapp.com/index/en/public_transit-MTA_Flushing_Main_St-NYCNJ-site_25720236-121" title="Visit by bus"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Buses</span></a>
+				<a href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&oe=UTF8&msa=0&mid=1dcCfyBsJKYNAoWmm7nln99uGAs8&ll=40.74977262220178%2C-73.848534&z=13" title="Click for more details"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Maps</span></a>
+				<a href="https://new.mta.info/maps/subway-line-maps/7-line" title="Click for more details"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">7 Train</span></a>
+				<a href="https://www.laguardiaairport.com/" title="✈ LaGuardia Airport website"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">LaGuardia Airport</span></a>
+				<a href="https://new.mta.info/maps/subway-line-maps/7-line" title="Click for more details"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">MTA</span></a>
+				<a href="https://new.mta.info/maps/subway-line-maps/7-line" title="Click for more details"<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Subway</span></a>
+			</p>
+		</div>
+	</footer>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-16" style="font-family:corbel;">
+  <p>Developed by <a class="fa fa-linkedin-square" style="color:#0e76a8" href="https://linkedin.com/in/muhammad-khan-21752a1a6" title="LinkedIn Profile" class="w3-hover-text-navy"> Muhammad Khan</a></p>
+</footer>
+</html>
+<!-- End page content -->
